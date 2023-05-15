@@ -8,4 +8,8 @@ export const { styled, css, globalCss, keyframes, getCssText, theme, createTheme
             background: "#FEFEFA",
         },
     },
+    media: {
+        bp1: "(min-width: 520px)",
+        bp2: "(min-width: 900px)",
+    },
 });
