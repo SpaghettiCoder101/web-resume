@@ -1,11 +1,12 @@
 import { styled } from "../stitches.config.ts";
 import "./App.css";
+import InfoColumn from "./components/InfoColumn.tsx";
 
 export default function App() {
 
     return (
         <Page>
-            <p>Test</p>
+            <InfoColumn />
         </Page>
     );
 }
@@ -14,9 +15,13 @@ export default function App() {
 const Page = styled("div", {
     display: "flex",
     flexGrow: 1,
-    flexDirection: "row",
+    flexDirection: "column",
     backgroundColor: "$background",
     maxWidth:"1414px",
     maxHeight: "2000px",
     margin: "0 auto",
+
+    "@bp2": {
+        flexDirection: "row",
+    },
 });

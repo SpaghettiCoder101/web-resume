@@ -7,12 +7,17 @@ export default function Photo() {
 }
 
 const Wrapper = styled("div", {
-    width: "17vw",
-    height: "17vw",
-    maxWidth: "24rem",
-    maxHeight: "24rem",
+    height:"10rem",
+    width: "10rem",
     backgroundColor: "$accent",
     borderRadius: "50%",
-    margin: "0 auto",
-    marginBottom: "6rem",
+    
+    "@bp2": {
+        marginBottom: "6rem",
+        height: "17vw",
+        width: "17vw",
+        maxWidth: "24rem",
+        maxHeight: "24rem",
+        margin: "0 auto",
+    },
 });
