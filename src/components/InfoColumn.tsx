@@ -1,15 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { styled } from "../../stitches.config";
 import Photo from "./Photo";
-import useWindowSize from "../hooks/useWindowSize";
 import InfoDetails from "./InfoDetails";
-
-// TODO, make this component responsive
-// we make the bar always visible on desktop, we use window size only to hide the button that makes it visible on mobile
 
 export default function InfoColumn() {
     const [open, setOpen] = useState(false);
-    const windowSize = useWindowSize();
 
     return (
         <Wrapper>

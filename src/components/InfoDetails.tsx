@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { styled } from "../../stitches.config";
 import { useStrings } from "../localization/hooks/useStrings";
+import KnowledgeChart from "./KnowledgeChart";
 
 type Props = {
     open: boolean;
@@ -24,6 +25,7 @@ export default function InfoDetails({ open }: Props) {
                 <Text>
                     {strings.about$presentation}
                 </Text>
+                <KnowledgeChart />
                 <Title>{strings.common$contacts}</Title>
                 <Text>
                     {strings.contacts$phone}<br /><Link href={"tel:" + strings.data$phone}> {strings.data$phone}</Link>
