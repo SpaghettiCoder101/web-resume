@@ -17,6 +17,6 @@ const Wrapper = styled("div", {
         maxWidth: "18rem",
         maxHeight: "18rem",
         margin: "0 auto",
-        marginBottom: "4rem",
+        marginBottom: "3rem",
     },
 });

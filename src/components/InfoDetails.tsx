@@ -22,9 +22,10 @@ export default function InfoDetails({ open }: Props) {
         >
             <Wrapper>
                 <Title>{strings.common$about}</Title>
-                <Text>
+                <Text bottomSpaced>
                     {strings.about$presentation}
                 </Text>
+                <Title>{strings.common$skills}</Title>
                 <KnowledgeChart />
                 <Title>{strings.common$contacts}</Title>
                 <Text>
@@ -42,7 +43,10 @@ export default function InfoDetails({ open }: Props) {
 }
 
 const Wrapper = styled("div", {
-   
+    overflow: "scroll",
+    "@bp1": {
+        overflow: "hidden",
+    },
 
 });
 
@@ -56,10 +60,17 @@ const Title = styled("h2", {
 });
 
 const Text = styled("p", {
-    fontSize: "1.2rem",
+    fontSize: "1.4rem",
     color: "$background",
     marginBottom: "1rem",
     marginTop: "0",
+    variants: {
+        bottomSpaced: {
+            true: {
+                marginBottom: "3rem",
+            },
+        },
+    },
 });
 
 const Link = styled("a", {

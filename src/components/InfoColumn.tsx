@@ -34,14 +34,15 @@ const Wrapper = styled("div", {
         flexGrow: 1,
         width: "33.3%",
         maxWidth: "33.3%",
-        paddingTop: "8rem",
+        paddingTop: "4rem",
         paddingLeft: "2rem",
         paddingRight: "2rem",
+        overflow: "auto",
     },
     "@bp2": {
-        paddingTop: "10rem",
-        paddingLeft: "8rem",
-        paddingRight: "8rem",
+        paddingTop: "5rem",
+        paddingLeft: "6rem",
+        paddingRight: "6rem",
     },
 });
 
@@ -59,12 +60,12 @@ const NameRow = styled("div", {
 
 const Name = styled("h1", {
     color: "$accent",
-    fontSize: "2rem",
+    fontSize: "3.2rem",
     textTransform: "uppercase",
     textAlign: "center",
     
     "@bp2": {
-        marginBottom: "5rem",
+        marginBottom: "3rem",
     },
 });
 
