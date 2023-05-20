@@ -24,7 +24,6 @@ const Wrapper = styled("div", {
     display: "flex",
     flexDirection: "column",
     backgroundColor: "$dark",
-    width:"100%",
     maxWidth: "100%",
     paddingTop: "1rem",
     paddingBottom: "1rem",
@@ -34,7 +33,6 @@ const Wrapper = styled("div", {
     boxSizing: "border-box",
     "@bp2": {
         flexGrow: 1,
-        width: "33.3%",
         maxWidth: "33.3%",
         paddingTop: "5rem",
         overflow: "auto",

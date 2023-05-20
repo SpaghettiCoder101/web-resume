@@ -61,6 +61,7 @@ const Company = styled("p", {
 const Description = styled("p", {
     margin: "0",
     marginBottom: "1.5rem",
+    width: "100%",
 });
 
 const RoleLabel = styled("p", {

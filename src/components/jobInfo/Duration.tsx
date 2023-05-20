@@ -28,4 +28,5 @@ const Text = styled("p", {
     fontSize: "1.2rem",
     fontWeight: "bold",
     margin: "0",
+    whiteSpace: "nowrap",
 });
