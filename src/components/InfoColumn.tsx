@@ -2,8 +2,10 @@ import { useState } from "react";
 import { styled } from "../../stitches.config";
 import Photo from "./Photo";
 import InfoDetails from "./InfoDetails";
+import { useStrings } from "../localization/hooks/useStrings";
 
 export default function InfoColumn() {
+    const strings = useStrings();
     const [open, setOpen] = useState(false);
 
     return (
@@ -12,7 +14,7 @@ export default function InfoColumn() {
                 <Photo />
                 <Name>Mirko Masi</Name>
             </NameRow>
-            <Button open={open} onClick={() => setOpen(!open)}>More info</Button>
+            <Button open={open} onClick={() => setOpen(!open)}>{open ? strings.common$lessInfo : strings.common$moreInfo}</Button>
             <InfoDetails open={open} />
         </Wrapper>
     );
@@ -43,9 +45,9 @@ const NameRow = styled("div", {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
     width: "100%",
-    "@bp1": {
+    "@bp2": {
         flexDirection: "column",
         alignItems: "center",
     },

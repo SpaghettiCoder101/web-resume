@@ -18,8 +18,8 @@ const Page = styled("div", {
     flexGrow: 1,
     flexDirection: "column",
     backgroundColor: "$background",
+    minHeight: "100vh",
     maxWidth:"1414px",
-    maxHeight: "2000px",
     margin: "0 auto",
 
     "@bp2": {

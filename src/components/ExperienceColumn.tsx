@@ -28,6 +28,8 @@ export default function ExperienceColumn() {
 
 const Wrapper = styled("div", {
     padding: "4rem 2rem",
+    minHeight: "100vh",
+    backgroundColor: "$background",
 });
 
 const Experience = styled("h2", {
