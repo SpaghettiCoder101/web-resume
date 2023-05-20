@@ -30,19 +30,12 @@ const Wrapper = styled("div", {
     paddingRight: "2rem",
     overflow: "hidden",
     boxSizing: "border-box",
-    "@bp1": {
+    "@bp2": {
         flexGrow: 1,
         width: "33.3%",
         maxWidth: "33.3%",
-        paddingTop: "4rem",
-        paddingLeft: "2rem",
-        paddingRight: "2rem",
-        overflow: "auto",
-    },
-    "@bp2": {
         paddingTop: "5rem",
-        paddingLeft: "6rem",
-        paddingRight: "6rem",
+        overflow: "auto",
     },
 });
 
@@ -88,7 +81,7 @@ const Button = styled("button", {
             },
         },
     },
-    "@bp1": {
+    "@bp2": {
         display: "none",
     },
 });
