@@ -1,13 +1,18 @@
-import { useState } from "react";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { styled } from "../../stitches.config";
+import { localeAtom } from "../localization/atoms/localeAtom";
+import { useSetAtom } from "jotai";
+import { Locales } from "../localization/Localization";
+import useAvailableLocale from "../localization/hooks/useAvailableLocale";
+import getExtendedLocale from "./utils/getExtendedLocale";
 
 export default function LanguageSelector() {
-    const [language, setLanguage] = useState("EN");
+    const language = useAvailableLocale();
+    const setLanguage = useSetAtom(localeAtom);
     const controls = useAnimation();
 
     async function changeLanguage() {
-        setLanguage(language === "EN" ? "IT" : "EN");
+        setLanguage(language === "en" ? "it" : "en");
         
         await controls.start({
             x: 10,
@@ -22,25 +27,19 @@ export default function LanguageSelector() {
     return (
         <Wrapper onClick={changeLanguage} animate={controls}>
             <AnimatePresence initial={false}>
-                {language === "EN" && <Language
-                    key="EN"
-                    initial={{ x:-100, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    exit={{ x: 100, opacity: 0 }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
-                    
-                >
-                English {">"}
-                </Language> }
-                {language === "IT" && <Language
-                    key="IT"
-                    initial={{ x:-100, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    exit={{ x: 100, opacity: 0 }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
-                >
-                Italiano {">"}
-                </Language> }
+                {Locales.map(locale => (
+                    language == locale && (
+                        <Language
+                            key={locale}
+                            initial={{ x:-100, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            exit={{ x: 100, opacity: 0 }}
+                            transition={{ duration: 0.6, ease: "easeOut" }}
+                        >
+                            {getExtendedLocale(locale)} {">"}
+                        </Language>
+                    )
+                ))}
             </AnimatePresence>
         </Wrapper>
     );
