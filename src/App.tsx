@@ -2,13 +2,17 @@ import { styled } from "../stitches.config.ts";
 import "./App.css";
 import ExperienceColumn from "./components/ExperienceColumn.tsx";
 import InfoColumn from "./components/InfoColumn.tsx";
+import LanguageSelector from "./components/LanguageSelector.tsx";
 
 export default function App() {
     return (
-        <Page>
-            <InfoColumn />
-            <ExperienceColumn />
-        </Page>
+        <>
+            <Page>
+                <InfoColumn />
+                <ExperienceColumn />
+            </Page>
+            <LanguageSelector />
+        </>
     );
 }
 
