@@ -21,7 +21,7 @@ export default {
         "job_1$from": "January 2023",
         "job_1$to": "",
         "job_1$company": "Freelance",
-        "job_1$description": "n questo ruolo, ho lavorato alla creazione e allo sviluppo di giochi 3D utilizzando il motore di gioco Unity e il linguaggio di programmazione C#.",
+        "job_1$description": "In questo ruolo, ho lavorato alla creazione e allo sviluppo di giochi 3D utilizzando il motore di gioco Unity e il linguaggio di programmazione C#.",
         "job_1$keypoints": "Implementato meccaniche di gioco, animazioni e IA dei personaggi|\nCollaborato con artisti e designer per garantire una realizzazione fedele dei concetti di gioco|\nContribuito alla creazione di librerie e utilità per facilitare e velocizzare lo sviluppo dei progetti",
         "job_1$technologies": "Unity, C#, Blender",
         "job_2$title": "Frontend Developer",
