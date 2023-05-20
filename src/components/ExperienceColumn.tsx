@@ -8,6 +8,10 @@ export default function ExperienceColumn() {
     const strings = useStrings();
     return (
         <Wrapper>
+            <Experience>
+                {strings.common$experience}
+            </Experience>
+
             {jobHistory.map((job, index) => (
                 <JobInfo 
                     key={index} 
@@ -23,5 +27,15 @@ export default function ExperienceColumn() {
 }
 
 const Wrapper = styled("div", {
-    padding: "0 2rem",
+    padding: "4rem 2rem",
+});
+
+const Experience = styled("h2", {
+    backgroundColor: "$accent",
+    padding: "1rem 2rem",
+    color: "$dark",
+    fontSize: "3rem",
+    textTransform: "uppercase",
+    margin: "0",
+    marginBottom: "5rem",
 });

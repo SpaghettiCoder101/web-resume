@@ -46,7 +46,7 @@ const TitleRow = styled("div", {
     marginBottom: "1.5rem",
 });
 
-const Title = styled("h2", {
+const Title = styled("h3", {
     fontSize: "2.4rem",
     margin: "0",
     lineHeight: "1",
