@@ -1,12 +1,13 @@
 import { styled } from "../stitches.config.ts";
 import "./App.css";
+import ExperienceColumn from "./components/ExperienceColumn.tsx";
 import InfoColumn from "./components/InfoColumn.tsx";
 
 export default function App() {
-
     return (
         <Page>
             <InfoColumn />
+            <ExperienceColumn />
         </Page>
     );
 }
