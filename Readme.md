@@ -1,6 +1,7 @@
 # Web Resume - In React
 I remade my resume in React because, well, why not?
 
+You can look at it in the **[Demo Page](https://spaghetticoder101.github.io/web-resume/)**
 
 ## No really, why?
 TL;DR: My GitHub profile was pathetically empty, but there comes a time in a developer's life when you actually need to showcase some work. I had an idea for a nice little project that also involves displaying my resume. This meant that I actually had to build my resume, and here we are.
